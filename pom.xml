@@ -9,12 +9,12 @@
 
     <groupId>dev.c0ps.libhttpd</groupId>
     <artifactId>root</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <!-- automatically set through: mvn versions:set -DupdateBuildOutputTimestampPolicy=always -DnewVersion=... -->
-        <project.build.outputTimestamp>2023-09-03T00:38:36Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2023-09-03T00:39:59Z</project.build.outputTimestamp>
     </properties>
 
     <modules>
