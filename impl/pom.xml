@@ -34,12 +34,12 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>11.0.15</version>
+            <version>11.0.16</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>11.0.15</version>
+            <version>11.0.16</version>
         </dependency>
 
         <!-- Jersey JAX-RS-->
@@ -96,7 +96,7 @@
         <dependency>
             <groupId>dev.c0ps</groupId>
             <artifactId>test-utils</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.5</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -114,14 +114,9 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>analyze</id>
-                        <!-- must be bound to a post-compile phase to work -->
-                        <phase>test</phase>
-                        <goals>
-                            <goal>analyze-only</goal>
-                        </goals>
+                        <id>search-for-unused-or-undeclared-deps</id>
                         <configuration>
-                            <ignoredUsedUndeclaredDependencies>
+                            <ignoredUsedUndeclaredDependencies combine.children="append">
                                 <!-- it is requried to use jersey-hk2 instead of hk2-api -->
                                 <ignoredUsedUndeclaredDependency>org.glassfish.hk2:hk2-api</ignoredUsedUndeclaredDependency>
                             </ignoredUsedUndeclaredDependencies>
