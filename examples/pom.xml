@@ -7,11 +7,11 @@
 
     <properties>
         <!-- use latest release on https://github.com/orgs/cops-lab/packages?tab=packages&q=libhttpd -->
-        <libhttpd.version>0.0.2-SNAPSHOT</libhttpd.version>
+        <libhttpd.version>0.0.2</libhttpd.version>
 
         <!-- both options are not needed, but strongly recommended for increased reproducibility -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.outputTimestamp>2023-08-25T02:05:13Z</project.build.outputTimestamp>
+        <project.build.outputTimestamp>2023-09-03T00:38:36Z</project.build.outputTimestamp>
 
         <!-- remove this deployment property in your client project -->
         <maven.deploy.skip>true</maven.deploy.skip>
